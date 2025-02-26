@@ -59,7 +59,6 @@
     <a href="https://davidlennuk23.thkit.ee/wp/">Minu WP</a>
 </section>
 
-<!-- Конспект по MVP -->
 <section class="mvp-concept">
     <h2>Konspket: MVP (Minimum Viable Product)</h2>
     <p>
@@ -84,6 +83,54 @@
         <li>Alustada veebirakendusega, mis pakub vaid põhilisi funktsioone (näiteks registreerimine, sisse logimine), et testida kasutajate huvi.</li>
         <li>Loa põhjal toote lihtne versioon, mis sisaldab ainult kõige olulisemaid omadusi ja testige seda väikese grupiga.</li>
         <li>Väike e-pood, kus on vaid mõned tooted, et näha, kas kliente huvitab pakutav toode.</li>
+    </ul>
+</section>
+<section class="git-remote-repo">
+    <h2>Konspket: Kaugrepo loomine ja hallamine Git-is</h2>
+    <p>
+        Kaugrepo (remote repository) on git'i hoidla, mis asub kaugserveris (nt GitHub, GitLab, Bitbucket jne) ning võimaldab töötada ja jagada koodivaru teiste arendajatega üle interneti. Järgnevalt on kirjas, kuidas luua kaugrepo ja kuidas seda oma kohalikule git-hoidla jaoks seadistada.
+    </p>
+
+    <h3>Kaugrepo loomine GitHub-is:</h3>
+    <ul>
+        <li>Mine GitHub-i ja logi sisse.</li>
+        <li>Loo uus repository, andes sellele nime ja valides, kas see on avalik või privaatne.</li>
+        <li>Ärge valige README faili lisamist (kuna me loome selle ise hiljem).</li>
+    </ul>
+
+    <h3>Kohaliku Git-repo loomine:</h3>
+    <p>
+        Kui sul pole veel kohalikke git-repo, siis saad järgmise käsuga algatada uue git-repository:
+    </p>
+    <code>git init</code>
+
+    <h3>Seosta oma kohaliku repo kaugrepo-ga:</h3>
+    <p>
+        Seosta oma kohaliku git-hoidla kaugrepo-ga järgmiselt:
+    </p>
+    <code>git remote add origin https://github.com/USERNAME/REPOSITORY_NAME.git</code>
+
+    <h3>Esimesed muudatused ja faili lisamine:</h3>
+    <ul>
+        <li>Failide lisamine: <code>git add .</code></li>
+        <li>Kommiti muudatused: <code>git commit -m "Esimene commit"</code></li>
+        <li>Pushige muudatused kaugrepo-sse: <code>git push -u origin master</code></li>
+    </ul>
+
+    <h3>Muudatused kaugrepo-s ja kohaliku repo uuendamine:</h3>
+    <ul>
+        <li>Pullige muudatused kaugrepo-st alla: <code>git pull origin master</code></li>
+        <li>Pushige oma muudatused kaugrepo-sse: <code>git push origin master</code></li>
+    </ul>
+
+    <h3>Kokkuvõtteks vajalikud käsklused:</h3>
+    <ul>
+        <li>Git-hoidla algatamine: <code>git init</code></li>
+        <li>Kaugrepo lisamine: <code>git remote add origin https://github.com/USERNAME/REPOSITORY_NAME.git</code></li>
+        <li>Failide lisamine: <code>git add .</code></li>
+        <li>Muudatuste kommitimine: <code>git commit -m "Esimene commit"</code></li>
+        <li>Muudatuste saatmine kaugrepo-sse: <code>git push -u origin master</code></li>
+        <li>Kaugrepo muudatuste allalaadimine: <code>git pull origin master</code></li>
     </ul>
 </section>
 
