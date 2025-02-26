@@ -55,3 +55,24 @@ section h2 {
     border-bottom: 2px solid #444;
     padding-bottom: 10px;
 }
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding-left: 15px;
+    position: relative;
+    color: #bdc3c7;
+}
+
+ul li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
