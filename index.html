@@ -8,16 +8,29 @@
 </head>
 <body>
 
+<nav>
+    <ul class="nav-menu">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#skills">Oskused</a></li>
+        <li><a href="#technologies">Tehnoloogiad</a></li>
+        <li><a href="#projects">Projektid</a></li>
+        <li><a href="#mvp-concept">MVP</a></li>
+        <li><a href="#git-remote-repo">Git Repo</a></li>
+    </ul>
+</nav>
+
 <header>
     <h1>Minu nimi on David Lennuk</h1>
+    <img src="cat.jpg" alt="cat" class="profile-photo">
 </header>
 
-<section class="intro">
+<section class="intro" id="intro">
     <h2>Minu eriala</h2>
     <p>Minu eriala on Nooremtarkvarearendaja.</p>
 </section>
 
-<section class="skills">
+<!-- Навыки -->
+<section class="skills" id="skills">
     <h2>Keeled, mida olen õppinud või õpin</h2>
     <ul>
         <li>Inglise keel</li>
@@ -26,7 +39,7 @@
     </ul>
 </section>
 
-<section class="technologies">
+<section class="technologies" id="technologies">
     <h2>IT-tehnoloogiad</h2>
     <ul>
         <li>HTML, CSS, JavaScript</li>
@@ -46,7 +59,7 @@
     </ul>
 </section>
 
-<section class="projects">
+<section class="projects" id="projects">
     <h2>Minu parimad projektid</h2>
     <ul>
         <li><a href="https://github.com/David-Lennuk/Madu_Uss">Projekt 1</a></li>
@@ -59,7 +72,7 @@
     <a href="https://davidlennuk23.thkit.ee/wp/">Minu WP</a>
 </section>
 
-<section class="mvp-concept">
+<section class="mvp-concept" id="mvp-concept">
     <h2>Konspekt: MVP (Minimum Viable Product)</h2>
     <p>
         MVP (Minimum Viable Product) ehk minimaalne elujõuline toode on toode, mis sisaldab ainult kõige olulisemaid funktsioone, mis on vajalikud toote turule toomiseks ja kasutajate tagasiside saamiseks. Selle eesmärk on testida ideed ja turgu ilma suuri investeeringuid tegemata.
@@ -85,7 +98,8 @@
         <li>Väike e-pood, kus on vaid mõned tooted, et näha, kas kliente huvitab pakutav toode.</li>
     </ul>
 </section>
-<section class="git-remote-repo">
+
+<section class="git-remote-repo" id="git-remote-repo">
     <h2>Konspket: Kaugrepo loomine ja hallamine Git-is</h2>
     <p>
         Kaugrepo (remote repository) on git'i hoidla, mis asub kaugserveris (nt GitHub, GitLab, Bitbucket jne) ning võimaldab töötada ja jagada koodivaru teiste arendajatega üle interneti. Järgnevalt on kirjas, kuidas luua kaugrepo ja kuidas seda oma kohalikule git-hoidla jaoks seadistada.
