@@ -33,8 +33,46 @@ header h1 {
     text-transform: uppercase;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    background-color: #575757;
+    color: #ffcc00;
+    border-radius: 5px;
+}
+
 section {
-    margin: 40px 0;
+    margin: 80px 0;
     padding: 40px;
     background-color: #1e1e1e;
     border-radius: 8px;
@@ -69,7 +107,6 @@ ul li {
 }
 
 ul li::before {
-    content: "•";
     color: #3498db;
     font-weight: bold;
     position: absolute;
@@ -103,4 +140,55 @@ a.portfolio-link {
 a.portfolio-link:hover {
     background-color: #2980b9;
     transition: background-color 0.3s;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #1c1c1c;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #444;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
